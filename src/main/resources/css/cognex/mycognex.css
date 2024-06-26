@@ -1,0 +1,388 @@
+.mycgx-sticky {
+    position: sticky;
+    position: -webkit-sticky;
+    bottom: 0;
+    height: 25px;
+    z-index:50;
+}
+
+.mycgx-fixed {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+}
+
+.mycgx-panel {
+    height: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -45px;
+    padding-top: 41px;
+    box-shadow: 0px 0px 10px -1px rgba(0,0,0,0.2);
+    background: #f9f9f9;
+    width: 0%;
+    transition: width 0.8s 0.3s, height 1s;
+    overflow: hidden;
+    border: none;
+    border-top: solid 4px #fff200;
+}
+
+.mycgx-panel .slick-prev,
+.mycgx-panel .slick-next {
+    height: 285px;
+    width: 30px;
+}
+
+.mycgx-panel .slick-prev:hover .material-icons,
+.mycgx-panel .slick-next:hover .material-icons {
+    opacity: 1;
+}
+
+.mycgx-panel .slick-dots {
+    bottom: 10px;
+}
+
+.mycgx-panel .slick-prev .material-icons,
+.mycgx-panel .slick-next .material-icons {
+    font-size: 50px;
+    color: #333;
+    opacity: 0.8;
+    margin-left: -10px;
+}
+
+.mycgx-panel .slick-disabled .material-icons {
+    color: #aaa;
+    opacity: 1 !important;
+}
+
+.mycgx-panel .slick-prev:before,
+.mycgx-panel .slick-next:before {
+    content: none;
+}
+
+.mycgx-btn {
+    width: 200px;
+    box-shadow: 0px -1px 4px -2px #000;
+    padding-right: 24px;
+    border: none;
+    transition: width 0.8s ease-out 0.2s;
+}
+
+.mycgx-btn i {
+    transition: transform 1s;
+}
+
+.mycgx-btn.active i {
+    transform: rotate(180deg);
+}
+
+.mycgx-btn.active {
+    width: 100%;
+}
+
+.mycgx-panel.active {
+    width: 100%;
+    height: 435px;
+    transition: width 0.8s, height 1s 0.2s;
+}
+
+.mycgx-btn:focus {
+    outline: none !important;
+}
+
+.mycgx-panel-header {
+    height: 41px;
+    background-color: #000;
+    margin-top: -41px;
+}
+
+@media screen and (-ms-high-contrast:active), (-ms-high-contrast:none) {
+    .mycgx-sticky {
+        position: relative;
+        height: auto;
+    }
+
+    .mycgx-fixed {
+        position: relative;
+    }
+
+    .mycgx-panel {
+        margin-top: -46px;
+        transition: height 1s;
+    }
+
+    .mycgx-btn {
+        margin-top: 4px;
+    }
+
+    .mycgx-panel.active {
+        transition: height 1s 0.2s;
+    }
+}
+
+.help-block a, 
+.help-block a {
+    color: #737373;
+}
+
+.mycgx-profile-img {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    border-radius: 10px;
+    height: 150px;
+}
+
+.mycgx-widget-container {
+    height: 320px;
+    margin-bottom: 45px;
+    margin-top: 5px;
+    font-size: 14px;
+}
+
+.mycgx-widget-container:focus {
+    outline: none !important;
+}
+
+.mycgx-widget {
+    padding-top: 5px;
+    height: -webkit-fill-available;
+    height: 100%;
+    background: #fff;
+    box-shadow: 0 1px 5px -2px #888;
+}
+
+.mycgx-widget .h1 {
+    font-size: 2rem;
+}
+
+.mycgx-widget .btn {
+    padding: 5px 10px;
+    font-size: 13px;
+}
+
+.mycgx-widget .btn-bottom, .text-bottom {
+    position: absolute;
+    bottom: 10px;
+}
+
+#myCgxViewArea {
+    padding: 0 5px;
+}
+
+#myCgxViewArea, 
+#myCgxProducts, 
+#myCgxRequests, 
+#myCgxMessages, 
+#myCgxEvents,
+#myCgxLogin, 
+#cookieLogin {
+    height: 100%;
+}
+
+#cookieLogin .form-control {
+    height: 40px !important;
+}
+
+#cookieLogin .btn {
+    width: 100%;
+    height: 40px !important;
+}
+
+.mycgx-widget .msg-icon {
+    display: inline-block;
+    margin-right: -30px;
+    vertical-align: top;
+}
+
+.mycgx-widget .msg-icon i, 
+#myCgxSnapshot i {
+    color: #000;
+}
+
+.mycgx-widget .msg-title {
+    display: inline-block;
+    padding-left: 35px;
+}
+
+.mycgx-widget .request-badge {
+    display: inline-block;
+    width: 85px;
+    margin-right: -90px;
+}
+
+.mycgx-widget .request-badge .badge {
+    width: 100%;
+    white-space: normal;
+}
+
+.mycgx-widget .request-title {
+    display: inline-block;
+    padding-left: 95px;
+    vertical-align: middle
+}
+
+.mycgx-widget .media-object-sm {
+    height: 35px !important;
+    width: 50px !important;
+}
+
+.mycgx-widget .media-heading-sm {
+    text-transform: none !important;
+    line-height: normal !important;
+    font-weight: normal !important;
+    margin-bottom: 5px !important;
+    font-size: 14px !important;
+}
+
+.mycgx-widget .media-left-sm {
+    padding-right: 10px !important;
+}
+
+.mycgx-widget .media-sm {
+    margin: 0 0 5px !important;
+}
+
+.mycgx-widget .media-sm .media-body {
+    vertical-align: middle;
+}
+
+.no-gutters {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+.sm-gutters {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+.no-gutter-left-lg {
+    padding-left: 0px
+}
+
+.badge-primary {
+    background-color: #0275d8;
+}
+
+.badge-primary .badge-icon {
+    color: #fff !important;
+}
+
+.badge-orange {
+    background-color: #ffd500;
+    color: #755803;
+}
+
+.badge-green {
+    background-color: #5eb81a;
+}
+
+.badge-grey {
+    background-color: #ebebeb;
+    color: #888;
+}
+
+.badge-icon {
+    font-size: 13px;
+    margin-left: 3px;
+    vertical-align: bottom;
+}
+
+.h1 .badge {
+    font-family: Arial;
+    margin-bottom: 12px;
+}
+
+.badge-default,
+.badge-primary,
+.badge-green,
+.badge-orange,
+.badge-grey {
+    font-weight: normal;
+}
+
+#myCgxLogin .h1 {
+    font-size: 2rem;
+}
+
+@media only screen and (max-width:991px) {
+    #myCgxLogin .sm-gutters {
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    #myCgxLogin .form-control {
+        height: 40px !important;
+    }
+
+    #myCgxLogin .btn {
+        width: 100%;
+        height: 40px !important;
+    }
+
+    .login-form-wrapper {
+        margin-bottom: 0 !important;
+    }
+}
+
+@media only screen and (min-width:768px) {
+    .no-gutter-left-sm {
+        padding-left: 0px
+    }
+
+    .dl-sm dd {
+        margin-left: 115px;
+        font-size: 14px;
+    }
+
+    .dl-sm dt {
+        width: 110px;
+        font-size: 14px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    .mycgx-panel.active {
+        height: 350px;
+    }
+
+    .mycgx-profile-img {
+        height: 115px;
+    }
+
+    #myCgxLogin .h1 {
+        font-size: 3rem;
+    }
+
+    .mycgx-widget-container {
+        height: 265px;
+        margin-bottom: 10px;
+    }
+
+    .mycgx-widget-container.snapshot {
+        width: 375px;
+    }
+
+    .mycgx-widget-container.login {
+        width: 515px;
+    }
+
+    #myCgxViewArea {
+        padding: 0 25px;
+    }
+}
+
+@media only screen and (min-width: 1200px) {
+    .mycgx-profile-img {
+        height: 115px;
+    }
+
+    .mycgx-widget-container.snapshot {
+        width: 385px;
+    }
+
+    .mycgx-widget-container.login {
+        width: 700px;
+    }
+}
